@@ -1,0 +1,15 @@
+let jwt = require('jsonwebtoken');
+
+exports.validateUser = function (req, res, next) {
+    next() ;
+    /* jwt.verify (req.headers['authorization'], req.app.get('secretKey'), (err, decoded) => {
+        if (err) {
+            res.json({status:"error", message: err.message, data:null});
+        } else {
+            // add user id to request
+            req.body.userId = decoded.id;
+            next();
+        }
+    });
+    */
+};
